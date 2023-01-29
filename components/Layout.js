@@ -17,16 +17,20 @@ export default function Layout({ title, children }) {
             <Link href="/">
               <a className="text-lg font-bold">nextStore</a>
             </Link>
-            <div className='text-base'>
-              <Link href="/cart"><a className='p-2'>Cart</a></Link>
-              <Link href="/login"><a className='p-2'>Login</a></Link>
+            <div className="text-base">
+              <Link href="/cart">
+                <a className="p-2">Cart</a>
+              </Link>
+              <Link href="/login">
+                <a className="p-2">Login</a>
+              </Link>
             </div>
           </nav>
         </header>
 
-        <main>{children}</main>
+        <main className="container m-auto mt-4">{children}</main>
 
-        <footer>footer</footer>
+        <footer className='flex h-10 justify-center items-center shadow-inner'>Copyright © 2023 nextStore - Aymen GHAZALI</footer>
       </div>
     </>
   );
