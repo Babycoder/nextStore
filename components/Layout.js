@@ -30,7 +30,9 @@ export default function Layout({ title, children }) {
 
         <main className="container m-auto mt-4">{children}</main>
 
-        <footer className='flex h-10 justify-center items-center shadow-inner'>Copyright © 2023 nextStore - Aymen GHAZALI</footer>
+        <footer className="flex h-10 justify-center items-center shadow-inner">
+          Copyright © 2023 nextStore - Aymen GHAZALI
+        </footer>
       </div>
     </>
   );
