@@ -22,7 +22,7 @@ const Productitem = ({ product }) => {
           </a>
         </Link>
         <p className="mb-2">{product.brand}</p>
-        <p>{product.price}</p>
+        <p>${product.price}</p>
         <button className="primary-button" type="button">
           Add to cart
         </button>
