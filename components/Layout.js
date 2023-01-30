@@ -6,7 +6,7 @@ export default function Layout({ title, children }) {
   return (
     <>
       <Head>
-        <title>{title ? title + 'Store' : 'nextStore'}</title>
+        <title>{title ? title + ' - nextStore' : 'nextStore'}</title>
         <meta name="description" content="Ecommerce website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
