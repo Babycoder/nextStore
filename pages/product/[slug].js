@@ -48,7 +48,7 @@ const Productscreen = () => {
             <h1>Status</h1>
             <h2>{product.countInStock ? 'In stock' : 'Unvailable'}</h2>
           </div>
-          <button className='primary-button w-full'>Add to cart</button>
+          <button className="primary-button w-full">Add to cart</button>
         </div>
       </div>
     </Layout>
