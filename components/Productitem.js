@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
-import React from 'react';
 
 const Productitem = ({ product }) => {
   return (
@@ -23,9 +22,13 @@ const Productitem = ({ product }) => {
         </Link>
         <p className="mb-2">{product.brand}</p>
         <p>${product.price}</p>
-        <button className="primary-button" type="button">
-          Add to cart
-        </button>
+        <Link href={`/product/${product.slug}`}>
+          <a>
+            <button className="primary-button" type="button">
+              Add to cart
+            </button>
+          </a>
+        </Link>
       </div>
     </div>
   );
